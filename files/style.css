@@ -289,6 +289,26 @@ body {
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
 
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        text-align: center; /* Center-align content */
+    }
+
+    .about-img, .about-text {
+        margin: 0 auto; /* Center images and text */
+    }
+
+    .about-text h2 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .about-text p {
+        font-size: 16px; /* Adjust font size */
+        line-height: 1.5; /* Improve readability */
+    }
+}
+
 /* SKILLS */
 #Skills {
     background-color: #000;
@@ -353,6 +373,20 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     z-index: 5;
 
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* Stack sections */
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single column for cards */
+    }
+
+    .skill-card {
+        max-width: 100%; /* Full width on small screens */
+    }
 }
 
 .card-front, .card-back {
