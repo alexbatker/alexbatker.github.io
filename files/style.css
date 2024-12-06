@@ -214,6 +214,41 @@ body {
     border-radius: 90px; /* Similar rounded edges */
 }
 
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center;
+        align-items: center;
+        padding: 70px 20px 0;
+    }
+
+    .home-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Reset the image position */
+    .img {
+        position: static;  /* Remove absolute positioning for mobile */
+        margin: 20px auto 0 auto;
+        display: block;
+    }
+
+    .responsive {
+        max-width: 80%; /* Make sure the image doesn't overflow on smaller screens */
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 40px; /* Scale headings down for smaller screens */
+    }
+
+    h3, h4 {
+        font-size: 24px; /* Adjust font sizes for readability on mobile */
+    }
+}
+
 /*about*/
 
 .about {
