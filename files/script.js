@@ -28,7 +28,7 @@ if (toTop) {
 }
 
 // Initialize EmailJS
-emailjs.init("ies5O4lUoUZXStXpZ");
+emailjs.init("35sJ42gZwcR4WkbDx");
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -53,7 +53,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 
     // Send email via EmailJS
     emailjs
-        .send("service_bgdp99x", "template_j1mehp9", formData)
+        .send("service_rk6nv3g", "template_ixvahti", formData)
         .then(() => {
             formStatus.textContent = "Message sent successfully!";
             formStatus.style.color = "#00d9ff";
