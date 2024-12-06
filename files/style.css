@@ -217,35 +217,43 @@ body {
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .home {
-        flex-direction: column; /* Stack content vertically */
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
         padding: 70px 20px 0;
+        text-align: center; /* This helps center content */
     }
 
+    /* Reset .home-content */
     .home-content {
         max-width: 100%;
-        text-align: center;
+        margin: 0 auto;
     }
 
-    /* Reset the image position */
+    /* Override .img styles on mobile */
     .img {
-        position: static;  /* Remove absolute positioning for mobile */
-        margin: 20px auto 0 auto;
-        display: block;
+        position: static !important; /* Remove absolute positioning */
+        margin: 20px auto 0 auto !important;
+        display: block !important;
+        width: 100%; /* Take full width so centering works easily */
+        text-align: center; /* Ensure text (image) is centered within */
     }
 
     .responsive {
-        max-width: 80%; /* Make sure the image doesn't overflow on smaller screens */
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto; /* Center the image itself */
+        display: block;
         border-radius: 50%;
     }
 
-    h1 {
-        font-size: 40px; /* Scale headings down for smaller screens */
+    /* Adjust headings to fit smaller screens */
+    .home-content h1 {
+        font-size: 40px;
     }
 
-    h3, h4 {
-        font-size: 24px; /* Adjust font sizes for readability on mobile */
+    .home-content h3, .home-content h4 {
+        font-size: 24px;
     }
 }
 
