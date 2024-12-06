@@ -34,31 +34,41 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
     event.preventDefault();
     const formStatus = document.getElementById("form-status");
 
+    // Collect form data
     const formData = {
-        name: this.name.value.trim(),
-        email: this.email.value.trim(),
+        from_name: this.name.value.trim(),
+        reply_to: this.email.value.trim(),
         message: this.message.value.trim(),
     };
 
-    if (!formData.name || !formData.email || !formData.message) {
+    // Validate input fields
+    if (!formData.from_name || !formData.reply_to || !formData.message) {
         formStatus.textContent = "Please fill out all fields before submitting.";
         formStatus.style.color = "red";
         return;
     }
 
+    // Debug: Log formData to ensure it’s populated correctly
+    console.log("Form Data:", formData);
+
+    // Send email via EmailJS
     emailjs
-        .send("service_bgdp99x", "default_template", formData)
+        .send("service_bgdp99x", "template_j1mehp9", formData)
         .then(() => {
             formStatus.textContent = "Message sent successfully!";
             formStatus.style.color = "#00d9ff";
-            this.reset();
+            this.reset(); // Clear the form
         })
         .catch((error) => {
             formStatus.textContent = "Failed to send message. Please try again.";
             formStatus.style.color = "red";
+
+            // Debug: Log the full error for inspection
             console.error("EmailJS Error:", error);
         });
 });
+
+
 
 // Initialize Particle.js
 particlesJS("particles-js", {
