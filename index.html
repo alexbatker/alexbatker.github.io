@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="ic.png">
+    <link rel="stylesheet" href='files\style.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+    <script>
+        console.log(typeof particlesJS !== "undefined" ? "Particle.js Loaded" : "Particle.js Not Loaded");
+    </script>
+
+
+    <header class="header">
+
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar" id="myLinks">
+            <a href="#Home" style="--i:1" class="active">Home</a>
+            <a href="#About" style="--i:2">About</a>
+            <a href="#Skills" style="--i:3">Skills</a>
+            <a href="#Projects" style="--i:4">Projects</a>
+            <a href="#Contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="home" id="Home">
+        <div class="home-content">
+
+            <h3>Hey there! I am</h3>
+            <h1>Alexander Batker</h1>
+            <h4 style="--i:6">I'm an IT graduate who is<br>
+                passionate about <span class="text"></span></h4>
+
+            <div class="img">
+                <img src="./img/Grad Pic.png" class="responsive border-img">
+            </div>
+
+            <div class="home-sci">
+                <a href="www.linkedin.com/in/alex-batker-0169b4286" style="--i:7" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/alexbatker" style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="https://docs.google.com/document/d/1qM_zKKLR36DiFYT90idRPkjmUnOWwo0I/edit?usp=sharing&ouid=100355748149234418807&rtpof=true&sd=true"
+                style="--i:11" class="btn-box" target="_blank">Download Resume</a>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="about" id="About">
+            <div class="about-img">
+                <img src="img\River.png" class="abt-res">
+            </div>
+            <div class="about-text">
+                <h2><span>About Me</span></h2>
+                <p>I am an enthusiastic IT professional with a solid foundation in networking and security, backed by a
+                    Bachelor's degree in Information Technology. Throughout my academic and professional journey, I've
+                    honed my skills in cybersecurity, programming, and cloud computing (AWS), with a keen interest in
+                    innovating and streamlining processes.
+
+
+                    I thrive in team settings, often finding that collaboration sparks my most creative solutions. I am
+                    currently seeking opportunities that will allow me to leverage my technical skills and passion for
+                    cybersecurity to contribute to and grow with a dynamic team.<br>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Skills">
+        <h1 class="subtitle">My Skills</h1>
+        <div class="skills-container">
+            <!-- Technical Skills Section -->
+            <div>
+                <h2 class="heading1">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-bug"></i>
+                        <h3>Offensive Security</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Defensive Security</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud (AWS) Solutions</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="icons-row">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>Front-End Development (HTML, CSS, JS)</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Scripting & Automation</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>DBMS (MySQL)</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Professional Skills Section -->
+            <div>
+                <h2 class="heading1">Professional Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Critical Thinking</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Communication</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Collaboration</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Creativity</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Adaptability</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Leadership</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Analytical</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Time Mgmt</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Initiative</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="Projects">
+        <div id="portfolio" class="services">
+            <div class="main-text" id="serv">
+                <h2><span>My Projects</span></h2>
+                <div class="serv-container">
+    
+                    <!-- AWS Ops Playbook Project -->
+                    <a href="https://github.com/alexbatker/AWS_Playbook" target="_blank" title="View AWS Ops Playbook on GitHub">
+                        <div class="row">
+                            <!-- Always visible prompt -->
+                            <div class="hover-prompt always-visible">Click to View</div>
+                            <img src="img/pic1.png" alt="AWS Ops Playbook">
+                            <div class="layer">
+                                <h5>AWS Ops Playbook</h5>
+                                <p>Developed AWS Cloud Ops Playbook: Deploying, managing, and troubleshooting cloud
+                                    resources, focusing on automation, security, and ops efficiency.</p>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <!-- Cybersecurity Projects -->
+                    <a href="https://github.com/alexbatker/CyberSec" target="_blank" title="View Cybersecurity Projects on GitHub">
+                        <div class="row">
+                            <!-- Always visible prompt -->
+                            <div class="hover-prompt always-visible">Click to View</div>
+                            <img src="img/middlepic.png" alt="Cybersecurity Projects">
+                            <div class="layer">
+                                <h5>Cybersecurity Projects</h5>
+                                <p>Variety of offensive and defensive security projects, including OSINT and Pentesting.</p>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <!-- Secure_Deploy Project -->
+                    <a href="https://github.com/alexbatker/IT" target="_blank" title="View Secure_Deploy on GitHub">
+                        <div class="row">
+                            <!-- Always visible prompt -->
+                            <div class="hover-prompt always-visible">Click to View</div>
+                            <img src="img/pic2.png" alt="Secure Deploy">
+                            <div class="layer">
+                                <h5>Secure_Deploy</h5>
+                                <p>Microsoft SCCM project managing 60+ devices. Includes app deployment, remediation,
+                                    patching, etc.</p>
+                            </div>
+                        </div>
+                    </a>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact <span>Me</span></h2>
+            <p>Let's work together! Feel free to send me a message.</p>
+
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="form-status"></div>
+        </div>
+    </section>
+
+
+
+    <a href="#Home" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <script src="./files/script.js"></script>
+
+
+
+</body>
+
+</html>
