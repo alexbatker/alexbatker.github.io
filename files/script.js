@@ -116,10 +116,8 @@ function manageParticles() {
 
         console.log(`Checking section: ${id}, rect:`, rect); // Debugging log
 
-        return (
-            rect.top >= -sectionHeight * threshold &&
-            rect.bottom <= window.innerHeight + sectionHeight * threshold
-        );
+        return (rect.top < window.innerHeight * threshold && rect.bottom > 0);
+
     });
 
     console.log(`Current section: ${currentSection}`); // Debugging log
